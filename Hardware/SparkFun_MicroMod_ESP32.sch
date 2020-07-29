@@ -19169,6 +19169,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="V_USB" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
+<symbol name="VDD">
+<description>&lt;h3&gt;VDD Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="VDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="3.3V" prefix="SUPPLY">
@@ -19212,160 +19219,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-</devicesets>
-</library>
-<library name="SparkFun-Connectors">
-<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
-This library contains electrically-functional connectors. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="PAD.02X.02">
-<description>&lt;h3&gt;Electrically Conductive Pad 0.02" Square&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area: 0.02" x 0.02"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="1" x="0" y="0" dx="0.508" dy="0.508" layer="1" cream="no"/>
-</package>
-<package name="PAD.03X.03">
-<description>&lt;h3&gt;Electrically Conductive Pad 0.03" Circle&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area: 0.03" x 0.03"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="PAD.03X.05">
-<description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area: 0.05" x 0.05"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="PAD.03X.04">
-<description>&lt;h3&gt;Electrically Conductive Pad 0.04" Circle&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area: 0.04" x 0.04"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="TP_15TH">
-<description>&lt;h3&gt;Electrically Conductive Via 0.015" Drill&lt;/h3&gt;
-Used as a test point connection for pogo pins or other debugging tools. 
-&lt;p&gt;Specifications:
-&lt;li&gt;Area:0.015"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.6096" stop="no"/>
-<circle x="0" y="0" radius="0.381" width="0" layer="30"/>
-</package>
-<package name="1X01_NO_SILK">
-<description>&lt;h3&gt;Plated Through Hole - No Silk Outline&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-1.27" y="1.143" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="TEST-POINT">
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.302" y1="0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94" curve="180"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector">&gt;Value</text>
-<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TEST-POINT" prefix="TP">
-<description>&lt;h3&gt;SparkFun Test Points&lt;/h3&gt;
-&lt;p&gt;Bare copper test points for troubleshooting or In-Circuit-Testing. These are used by our Production team for verifying production board runs using pogo-pins on test beds.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13284”&gt;SparkFun LSM9DS1 Breakout&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13714”&gt;SparkFun PSOC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13879"&gt;SparkFun Load Cell Amplifier&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
+<deviceset name="VDD" prefix="SUPPLY">
+<description>&lt;h3&gt;VDD Voltage Supply&lt;/h3&gt;
+&lt;p&gt;Positive voltage supply (traditionally for a CMOS device, D=drain).&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+<gate name="VDD" symbol="VDD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="2" package="PAD.02X.02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3" package="PAD.03X.03">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3X5" package="PAD.03X.05">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3X4" package="PAD.03X.04">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TP_15TH_THRU" package="TP_15TH">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="POGO_PTH" package="1X01_NO_SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -19467,8 +19328,9 @@ Used as a test point connection for pogo pins or other debugging tools.
 <part name="C8" library="SparkFun-Capacitors" deviceset="CAP" device="-0402-TIGHT" value="DNP"/>
 <part name="C10" library="SparkFun-Capacitors" deviceset="CAP" device="-0402-TIGHT" value="DNP"/>
 <part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3" value=""/>
-<part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3" value=""/>
+<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
+<part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
+<part name="SUPPLY18" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19483,7 +19345,7 @@ MTDO         1         x       x
 GPIO5        1         1       x
 If U0TXD, GPIO2, GPIO5 are floating, 
 GPIO0 determines boot mode</text>
-<text x="332.74" y="190.5" size="2.54" layer="94" font="vector" align="top-left">Auto-Reset</text>
+<text x="332.74" y="187.96" size="2.54" layer="94" font="vector">Auto-Reset</text>
 <text x="40.64" y="38.1" size="1.27" layer="97" font="vector" align="bottom-center">Near VDDA
 46, 43</text>
 <text x="60.96" y="38.1" size="1.27" layer="97" font="vector" align="bottom-center">Near VDDA_LNA
@@ -19510,11 +19372,11 @@ GPIO0 determines boot mode</text>
 <wire x1="330.2" y1="35.56" x2="330.2" y2="106.68" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="106.68" x2="330.2" y2="193.04" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="106.68" x2="431.8" y2="106.68" width="0.2032" layer="97" style="longdash"/>
-<text x="2.54" y="190.5" size="2.54" layer="94" font="vector" align="top-left">Espressif ESP32</text>
-<text x="2.54" y="276.86" size="2.54" layer="94" font="vector" align="top-left">128Mb Flash</text>
+<text x="2.54" y="187.96" size="2.54" layer="94" font="vector">Espressif ESP32</text>
+<text x="2.54" y="274.32" size="2.54" layer="94" font="vector">128Mb Flash</text>
 <text x="109.22" y="274.32" size="2.54" layer="94" font="vector" rot="MR180" align="top-left">32.768kHz RTC Crystal</text>
 <text x="332.74" y="104.14" size="2.54" layer="94" font="vector" align="top-left">Status LED</text>
-<text x="421.64" y="10.16" size="2.54" layer="94" font="vector" align="top-left">v02</text>
+<text x="421.64" y="7.62" size="2.54" layer="94" font="vector">v10</text>
 <text x="354.838" y="11.43" size="2.54" layer="94" font="vector" rot="MR180" align="top-left">Alex Wende</text>
 <text x="106.68" y="180.34" size="2.032" layer="97" font="vector" align="bottom-center">ESP32 VCC Range: 2.8-3.6V</text>
 <text x="381" y="114.3" size="1.778" layer="97" font="vector" align="top-center">If DTR is LOW, toggling RTS from HIGH to LOW resets to run mode.
@@ -19522,12 +19384,6 @@ If RTS is HIGH, toggling DTR from LOW to HIGH resets to bootloader.</text>
 <text x="332.74" y="274.32" size="2.54" layer="94" font="vector">CP2102N (USB-to-Serial Converter)</text>
 <text x="200.66" y="274.32" size="2.54" layer="94" font="vector">MicroMod Connector</text>
 <wire x1="198.12" y1="279.4" x2="198.12" y2="193.04" width="0.2032" layer="97" style="longdash"/>
-<text x="218.44" y="203.2" size="1.27" layer="91" font="vector">JTAG:
-- GPIO14 -&gt; TMS
-- GPIO12 -&gt; TDI
-- GPIO13 -&gt; TCK
-- GPIO15 -&gt; TDO
-</text>
 <text x="91.44" y="73.66" size="1.27" layer="97" font="vector" ratio="16">Antenna Trace Calulation:</text>
 <text x="91.44" y="60.96" size="1.27" layer="97" font="vector">Copper Thickness (1oz): 1.4mil/0.035mm
 Board Thickness: 0.8mm
@@ -19820,13 +19676,14 @@ RF Trace Width: 13mil/0.3302mm</text>
 <instance part="GND13" gate="1" x="10.16" y="134.62" smashed="yes">
 <attribute name="VALUE" x="7.62" y="132.08" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="TP1" gate="G$1" x="355.6" y="200.66" smashed="yes">
-<attribute name="NAME" x="359.918" y="200.152" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="353.06" y="198.12" size="1.778" layer="96" font="vector"/>
+<instance part="SUPPLY3" gate="VDD" x="33.02" y="243.84" smashed="yes">
+<attribute name="VALUE" x="33.02" y="246.634" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="TP2" gate="G$1" x="355.6" y="198.12" smashed="yes">
-<attribute name="NAME" x="360.172" y="197.104" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="353.06" y="195.58" size="1.778" layer="96" font="vector"/>
+<instance part="SUPPLY15" gate="VDD" x="187.96" y="124.46" smashed="yes">
+<attribute name="VALUE" x="187.96" y="127.254" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY18" gate="VDD" x="137.16" y="30.48" smashed="yes">
+<attribute name="VALUE" x="137.16" y="33.274" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -20197,7 +20054,7 @@ RF Trace Width: 13mil/0.3302mm</text>
 <junction x="35.56" y="91.44"/>
 </segment>
 </net>
-<net name="15-SPI_MOSI/SD_CMD" class="0">
+<net name="15-SPI_COPI/SD_CMD" class="0">
 <segment>
 <wire x1="157.48" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
 <label x="160.02" y="93.98" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20305,28 +20162,26 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="U1" gate="U1" pin="!CS!"/>
 </segment>
 </net>
-<net name="FLASH_VDD" class="0">
+<net name="VDD" class="0">
 <segment>
-<wire x1="157.48" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
-<label x="160.02" y="121.92" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="VDD3P3_SDIO"/>
+<pinref part="SUPPLY15" gate="VDD" pin="VDD"/>
+<wire x1="187.96" y1="124.46" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="121.92" x2="157.48" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C24" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="27.94" x2="137.16" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="30.48" x2="144.78" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="30.48" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="33.02" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
-<label x="142.24" y="33.02" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="SUPPLY18" gate="VDD" pin="VDD"/>
+<wire x1="137.16" y1="30.48" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="241.3" x2="33.02" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="238.76" x2="33.02" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="241.3" x2="33.02" y2="241.3" width="0.1524" layer="91"/>
 <junction x="33.02" y="241.3"/>
 <pinref part="U1" gate="U1" pin="VDD"/>
-<label x="33.02" y="243.84" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="SUPPLY3" gate="VDD" pin="VDD"/>
+<wire x1="33.02" y1="243.84" x2="33.02" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="27-D1" class="0">
@@ -20414,7 +20269,7 @@ RF Trace Width: 13mil/0.3302mm</text>
 <label x="381" y="81.28" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="2-SPI_MISO/SD_DATA0" class="0">
+<net name="2-SPI_CIPO/SD_DATA0" class="0">
 <segment>
 <wire x1="157.48" y1="160.02" x2="160.02" y2="160.02" width="0.1524" layer="91"/>
 <label x="160.02" y="160.02" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20437,11 +20292,6 @@ RF Trace Width: 13mil/0.3302mm</text>
 <wire x1="408.94" y1="248.92" x2="411.48" y2="248.92" width="0.1524" layer="91"/>
 <label x="411.48" y="248.92" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
-<segment>
-<pinref part="TP1" gate="G$1" pin="1"/>
-<wire x1="355.6" y1="200.66" x2="353.06" y2="200.66" width="0.1524" layer="91"/>
-<label x="353.06" y="200.66" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="U0TXD" class="0">
 <segment>
@@ -20453,11 +20303,6 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="U4" gate="G$1" pin="RXD"/>
 <wire x1="408.94" y1="246.38" x2="411.48" y2="246.38" width="0.1524" layer="91"/>
 <label x="411.48" y="246.38" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-<segment>
-<pinref part="TP2" gate="G$1" pin="1"/>
-<wire x1="355.6" y1="198.12" x2="353.06" y2="198.12" width="0.1524" layer="91"/>
-<label x="353.06" y="198.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DTR" class="0">
