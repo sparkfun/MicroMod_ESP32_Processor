@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -19929,7 +19929,7 @@ RF Trace Width: 13mil/0.3302mm</text>
 <wire x1="25.4" y1="137.16" x2="25.4" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="32-G6/RTC" class="0">
+<net name="32-G5/RTC" class="0">
 <segment>
 <wire x1="55.88" y1="134.62" x2="53.34" y2="134.62" width="0.1524" layer="91"/>
 <label x="53.34" y="134.62" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -19945,12 +19945,12 @@ RF Trace Width: 13mil/0.3302mm</text>
 <label x="144.78" y="243.84" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="G6/BUS6"/>
-<wire x1="294.64" y1="167.64" x2="297.18" y2="167.64" width="0.1524" layer="91"/>
-<label x="297.18" y="167.64" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="J1" gate="J1" pin="G5/BUS5"/>
+<wire x1="294.64" y1="170.18" x2="297.18" y2="170.18" width="0.1524" layer="91"/>
+<label x="297.18" y="170.18" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="33-G7/RTC" class="0">
+<net name="33-G6/RTC" class="0">
 <segment>
 <wire x1="55.88" y1="132.08" x2="53.34" y2="132.08" width="0.1524" layer="91"/>
 <label x="53.34" y="132.08" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -19966,9 +19966,9 @@ RF Trace Width: 13mil/0.3302mm</text>
 <label x="160.02" y="243.84" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="G7/BUS7"/>
-<wire x1="294.64" y1="165.1" x2="297.18" y2="165.1" width="0.1524" layer="91"/>
-<label x="297.18" y="165.1" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="J1" gate="J1" pin="G6/BUS6"/>
+<wire x1="294.64" y1="167.64" x2="297.18" y2="167.64" width="0.1524" layer="91"/>
+<label x="297.18" y="167.64" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="34-A0" class="0">
@@ -20475,29 +20475,7 @@ RF Trace Width: 13mil/0.3302mm</text>
 <junction x="25.4" y="149.86"/>
 </segment>
 </net>
-<net name="4-SD_DATA1/G0" class="0">
-<segment>
-<pinref part="J1" gate="J1" pin="G0/BUS0"/>
-<wire x1="294.64" y1="182.88" x2="297.18" y2="182.88" width="0.1524" layer="91"/>
-<label x="297.18" y="182.88" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-<segment>
-<wire x1="157.48" y1="157.48" x2="160.02" y2="157.48" width="0.1524" layer="91"/>
-<label x="160.02" y="157.48" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="(ADC2:0/TOUCH0/RTC10/SPIHD)GPIO4"/>
-</segment>
-<segment>
-<wire x1="294.64" y1="241.3" x2="297.18" y2="241.3" width="0.1524" layer="91"/>
-<label x="297.18" y="241.3" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SDIO_DATA1"/>
-</segment>
-</net>
-<net name="12-SD_DATA2/G1" class="0">
-<segment>
-<pinref part="J1" gate="J1" pin="G1/BUS1"/>
-<wire x1="294.64" y1="180.34" x2="297.18" y2="180.34" width="0.1524" layer="91"/>
-<label x="297.18" y="180.34" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
+<net name="12-SD_DATA2/G4" class="0">
 <segment>
 <wire x1="294.64" y1="238.76" x2="297.18" y2="238.76" width="0.1524" layer="91"/>
 <label x="297.18" y="238.76" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20508,8 +20486,13 @@ RF Trace Width: 13mil/0.3302mm</text>
 <label x="160.02" y="101.6" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="(GPIO12/ADC2:5/TOUCH5/RTC15/SPIQ)MTDI"/>
 </segment>
+<segment>
+<pinref part="J1" gate="J1" pin="G4/BUS4"/>
+<wire x1="294.64" y1="172.72" x2="297.18" y2="172.72" width="0.1524" layer="91"/>
+<label x="297.18" y="172.72" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
 </net>
-<net name="0-!BOOT!/I2C_!INT" class="0">
+<net name="0-!BOOT!" class="0">
 <segment>
 <label x="162.56" y="162.56" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="(ADC2:1/TOUCH1/RTC11/CLK_OUT1)GPIO0"/>
@@ -20530,13 +20513,8 @@ RF Trace Width: 13mil/0.3302mm</text>
 <label x="241.3" y="243.84" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="J1" gate="J1" pin="!BOOT!"/>
 </segment>
-<segment>
-<pinref part="J1" gate="J1" pin="I2C_!INT!"/>
-<wire x1="248.92" y1="177.8" x2="246.38" y2="177.8" width="0.1524" layer="91"/>
-<label x="246.38" y="177.8" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
 </net>
-<net name="16-G2/RX1/AUD_IN" class="0">
+<net name="16-G3/RX1/AUD_IN" class="0">
 <segment>
 <wire x1="157.48" y1="152.4" x2="160.02" y2="152.4" width="0.1524" layer="91"/>
 <label x="160.02" y="152.4" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20553,12 +20531,12 @@ RF Trace Width: 13mil/0.3302mm</text>
 <label x="297.18" y="198.12" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="G2/BUS2"/>
-<wire x1="294.64" y1="177.8" x2="297.18" y2="177.8" width="0.1524" layer="91"/>
-<label x="297.18" y="177.8" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="J1" gate="J1" pin="G3/BUS3"/>
+<wire x1="294.64" y1="175.26" x2="297.18" y2="175.26" width="0.1524" layer="91"/>
+<label x="297.18" y="175.26" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="17-G3/TX1/AUD_OUT" class="0">
+<net name="17-G2/TX1/AUD_OUT" class="0">
 <segment>
 <wire x1="157.48" y1="149.86" x2="160.02" y2="149.86" width="0.1524" layer="91"/>
 <label x="160.02" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20575,12 +20553,12 @@ RF Trace Width: 13mil/0.3302mm</text>
 <label x="297.18" y="200.66" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="G3/BUS3"/>
-<wire x1="294.64" y1="175.26" x2="297.18" y2="175.26" width="0.1524" layer="91"/>
-<label x="297.18" y="175.26" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="J1" gate="J1" pin="G2/BUS2"/>
+<wire x1="294.64" y1="177.8" x2="297.18" y2="177.8" width="0.1524" layer="91"/>
+<label x="297.18" y="177.8" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="25-G4/AUD_LRCLK/SCL1" class="0">
+<net name="25-G0/AUD_LRCLK/SCL1" class="0">
 <segment>
 <wire x1="157.48" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
 <label x="160.02" y="132.08" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20597,12 +20575,12 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="J1" gate="J1" pin="I2C_SCL1"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="G4/BUS4"/>
-<wire x1="294.64" y1="172.72" x2="297.18" y2="172.72" width="0.1524" layer="91"/>
-<label x="297.18" y="172.72" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="J1" gate="J1" pin="G0/BUS0"/>
+<wire x1="294.64" y1="182.88" x2="297.18" y2="182.88" width="0.1524" layer="91"/>
+<label x="297.18" y="182.88" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="26-G5/AUD_BCLK/SDA1" class="0">
+<net name="26-G1/AUD_BCLK/SDA1" class="0">
 <segment>
 <wire x1="157.48" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
 <label x="160.02" y="129.54" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20619,9 +20597,26 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="J1" gate="J1" pin="I2C_SDA1"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="G5/BUS5"/>
-<wire x1="294.64" y1="170.18" x2="297.18" y2="170.18" width="0.1524" layer="91"/>
-<label x="297.18" y="170.18" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="J1" gate="J1" pin="G1/BUS1"/>
+<wire x1="294.64" y1="180.34" x2="297.18" y2="180.34" width="0.1524" layer="91"/>
+<label x="297.18" y="180.34" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="4-SD_DATA1/I2C_!INT" class="0">
+<segment>
+<pinref part="J1" gate="J1" pin="I2C_!INT!"/>
+<wire x1="248.92" y1="177.8" x2="246.38" y2="177.8" width="0.1524" layer="91"/>
+<label x="246.38" y="177.8" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="294.64" y1="241.3" x2="297.18" y2="241.3" width="0.1524" layer="91"/>
+<label x="297.18" y="241.3" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="J1" gate="J1" pin="SDIO_DATA1"/>
+</segment>
+<segment>
+<wire x1="157.48" y1="157.48" x2="160.02" y2="157.48" width="0.1524" layer="91"/>
+<label x="160.02" y="157.48" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="(ADC2:0/TOUCH0/RTC10/SPIHD)GPIO4"/>
 </segment>
 </net>
 </nets>
