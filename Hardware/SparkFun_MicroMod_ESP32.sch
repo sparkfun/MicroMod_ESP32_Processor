@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -160,7 +160,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
-<schematic xreflabel="%F%N/%S" xrefpart="/%S.%C%R">
+<schematic xreflabel="%F%N/%S" xrefpart="1_/%S.%C%R">
 <libraries>
 <library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
@@ -18017,12 +18017,12 @@ Out</text>
 <wire x1="20.32" y1="53.34" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-45.72" x2="-20.32" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="-45.72" x2="-20.32" y2="53.34" width="0.254" layer="94"/>
-<pin name="SPI_SCK/SDIO_CLK" x="22.86" y="50.8" length="short" rot="R180"/>
-<pin name="SPI_SDO/SDIO_CMD" x="22.86" y="48.26" length="short" rot="R180"/>
+<pin name="SPI_SCK1/SDIO_CLK" x="22.86" y="50.8" length="short" rot="R180"/>
+<pin name="SPI_SDO1/SDIO_CMD" x="22.86" y="48.26" length="short" rot="R180"/>
 <pin name="SDIO_DATA1" x="22.86" y="43.18" length="short" rot="R180"/>
-<pin name="SPI_SDI/SDIO_DATA0" x="22.86" y="45.72" length="short" rot="R180"/>
+<pin name="SPI_SDI1/SDIO_DATA0" x="22.86" y="45.72" length="short" rot="R180"/>
 <pin name="SDIO_DATA2" x="22.86" y="40.64" length="short" rot="R180"/>
-<pin name="SPI_!CS!/SDIO_DATA3" x="22.86" y="38.1" length="short" rot="R180"/>
+<pin name="SPI_!CS1!/SDIO_DATA3" x="22.86" y="38.1" length="short" rot="R180"/>
 <pin name="AUD_MCLK" x="-22.86" y="0" length="short"/>
 <pin name="D0" x="22.86" y="10.16" length="short" rot="R180"/>
 <pin name="SWDCK" x="-22.86" y="5.08" length="short"/>
@@ -18035,9 +18035,9 @@ Out</text>
 <pin name="A0" x="22.86" y="20.32" length="short" rot="R180"/>
 <pin name="PWM1" x="22.86" y="12.7" length="short" rot="R180"/>
 <pin name="PWM0" x="22.86" y="15.24" length="short" rot="R180"/>
-<pin name="SPI_SCK1" x="22.86" y="33.02" length="short" rot="R180"/>
-<pin name="SPI_SDO1" x="22.86" y="30.48" length="short" rot="R180"/>
-<pin name="SPI_SDI1" x="22.86" y="27.94" length="short" rot="R180"/>
+<pin name="SPI_SCK" x="22.86" y="33.02" length="short" rot="R180"/>
+<pin name="SPI_SDO" x="22.86" y="30.48" length="short" rot="R180"/>
+<pin name="SPI_SDI" x="22.86" y="27.94" length="short" rot="R180"/>
 <pin name="BATT_VIN/3" x="-22.86" y="-30.48" length="short"/>
 <pin name="RX1" x="22.86" y="0" length="short" rot="R180"/>
 <pin name="TX1" x="22.86" y="2.54" length="short" rot="R180"/>
@@ -18073,7 +18073,7 @@ Out</text>
 <pin name="G8" x="22.86" y="-35.56" length="short" rot="R180"/>
 <pin name="G9/ADC_D-/CAM_HSYNC" x="22.86" y="-38.1" length="short" rot="R180"/>
 <pin name="G10/ADC_D+/CAM_VSYNC" x="22.86" y="-40.64" length="short" rot="R180"/>
-<pin name="SPI_!CS!1" x="22.86" y="25.4" length="short" rot="R180"/>
+<pin name="SPI_!CS!" x="22.86" y="25.4" length="short" rot="R180"/>
 <text x="-20.32" y="53.848" size="1.778" layer="95">&gt;Name</text>
 <text x="-20.32" y="-48.26" size="1.778" layer="96">&gt;Value</text>
 <pin name="RTC_3V" x="-22.86" y="38.1" length="short"/>
@@ -18151,14 +18151,14 @@ Out</text>
 <connect gate="J1" pin="RX2" pad="20"/>
 <connect gate="J1" pin="SDIO_DATA1" pad="66"/>
 <connect gate="J1" pin="SDIO_DATA2" pad="68"/>
-<connect gate="J1" pin="SPI_!CS!/SDIO_DATA3" pad="70"/>
-<connect gate="J1" pin="SPI_!CS!1" pad="55"/>
-<connect gate="J1" pin="SPI_SCK/SDIO_CLK" pad="60"/>
-<connect gate="J1" pin="SPI_SCK1" pad="57"/>
-<connect gate="J1" pin="SPI_SDI/SDIO_DATA0" pad="64"/>
-<connect gate="J1" pin="SPI_SDI1" pad="61"/>
-<connect gate="J1" pin="SPI_SDO/SDIO_CMD" pad="62"/>
-<connect gate="J1" pin="SPI_SDO1" pad="59"/>
+<connect gate="J1" pin="SPI_!CS!" pad="55"/>
+<connect gate="J1" pin="SPI_!CS1!/SDIO_DATA3" pad="70"/>
+<connect gate="J1" pin="SPI_SCK" pad="57"/>
+<connect gate="J1" pin="SPI_SCK1/SDIO_CLK" pad="60"/>
+<connect gate="J1" pin="SPI_SDI" pad="61"/>
+<connect gate="J1" pin="SPI_SDI1/SDIO_DATA0" pad="64"/>
+<connect gate="J1" pin="SPI_SDO" pad="59"/>
+<connect gate="J1" pin="SPI_SDO1/SDIO_CMD" pad="62"/>
 <connect gate="J1" pin="SWDCK" pad="21"/>
 <connect gate="J1" pin="SWDIO" pad="23"/>
 <connect gate="J1" pin="TX1" pad="17"/>
@@ -18218,14 +18218,14 @@ Out</text>
 <connect gate="J1" pin="RX2" pad="20"/>
 <connect gate="J1" pin="SDIO_DATA1" pad="66"/>
 <connect gate="J1" pin="SDIO_DATA2" pad="68"/>
-<connect gate="J1" pin="SPI_!CS!/SDIO_DATA3" pad="70"/>
-<connect gate="J1" pin="SPI_!CS!1" pad="55"/>
-<connect gate="J1" pin="SPI_SCK/SDIO_CLK" pad="60"/>
-<connect gate="J1" pin="SPI_SCK1" pad="57"/>
-<connect gate="J1" pin="SPI_SDI/SDIO_DATA0" pad="64"/>
-<connect gate="J1" pin="SPI_SDI1" pad="61"/>
-<connect gate="J1" pin="SPI_SDO/SDIO_CMD" pad="62"/>
-<connect gate="J1" pin="SPI_SDO1" pad="59"/>
+<connect gate="J1" pin="SPI_!CS!" pad="55"/>
+<connect gate="J1" pin="SPI_!CS1!/SDIO_DATA3" pad="70"/>
+<connect gate="J1" pin="SPI_SCK" pad="57"/>
+<connect gate="J1" pin="SPI_SCK1/SDIO_CLK" pad="60"/>
+<connect gate="J1" pin="SPI_SDI" pad="61"/>
+<connect gate="J1" pin="SPI_SDI1/SDIO_DATA0" pad="64"/>
+<connect gate="J1" pin="SPI_SDO" pad="59"/>
+<connect gate="J1" pin="SPI_SDO1/SDIO_CMD" pad="62"/>
 <connect gate="J1" pin="SWDCK" pad="21"/>
 <connect gate="J1" pin="SWDIO" pad="23"/>
 <connect gate="J1" pin="TX1" pad="17"/>
@@ -19296,7 +19296,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U2" library="SparkFun-RF" deviceset="ESP32" device=""/>
 <part name="C27" library="SparkFun-Capacitors" deviceset="3.0NF" device="-0402T-50V-5%" value="3.0nF"/>
 <part name="GND40" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U4" library="SparkFun-IC-Comms" deviceset="CP2102N" device="" value="CP210X"/>
+<part name="U4" library="SparkFun-IC-Comms" deviceset="CP2102N" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
@@ -19376,12 +19376,12 @@ GPIO0 determines boot mode</text>
 <text x="2.54" y="274.32" size="2.54" layer="94" font="vector">128Mb Flash</text>
 <text x="109.22" y="274.32" size="2.54" layer="94" font="vector" rot="MR180" align="top-left">32.768kHz RTC Crystal</text>
 <text x="332.74" y="104.14" size="2.54" layer="94" font="vector" align="top-left">Status LED</text>
-<text x="421.64" y="7.62" size="2.54" layer="94" font="vector">v10</text>
+<text x="421.64" y="7.62" size="2.54" layer="94" font="vector">v11</text>
 <text x="354.838" y="11.43" size="2.54" layer="94" font="vector" rot="MR180" align="top-left">Alex Wende</text>
 <text x="106.68" y="180.34" size="2.032" layer="97" font="vector" align="bottom-center">ESP32 VCC Range: 2.8-3.6V</text>
 <text x="381" y="114.3" size="1.778" layer="97" font="vector" align="top-center">If DTR is LOW, toggling RTS from HIGH to LOW resets to run mode.
 If RTS is HIGH, toggling DTR from LOW to HIGH resets to bootloader.</text>
-<text x="332.74" y="274.32" size="2.54" layer="94" font="vector">CP2104/2N (USB-to-Serial Converter)</text>
+<text x="332.74" y="274.32" size="2.54" layer="94" font="vector">CP2102N (USB-to-Serial Converter)</text>
 <text x="200.66" y="274.32" size="2.54" layer="94" font="vector">MicroMod Connector</text>
 <wire x1="198.12" y1="279.4" x2="198.12" y2="193.04" width="0.2032" layer="97" style="longdash"/>
 <text x="91.44" y="73.66" size="1.27" layer="97" font="vector" ratio="16">Antenna Trace Calulation:</text>
@@ -20054,42 +20054,6 @@ RF Trace Width: 13mil/0.3302mm</text>
 <junction x="35.56" y="91.44"/>
 </segment>
 </net>
-<net name="15-SPI_COPI/SD_CMD" class="0">
-<segment>
-<wire x1="157.48" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
-<label x="160.02" y="93.98" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="(GPIO15/ADC2:3/TOUCH3/RTC13/SPICSO/U0RTS)MTDO"/>
-</segment>
-<segment>
-<wire x1="294.64" y1="246.38" x2="297.18" y2="246.38" width="0.1524" layer="91"/>
-<label x="297.18" y="246.38" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SPI_SDO/SDIO_CMD"/>
-</segment>
-</net>
-<net name="14-SPI_SCK/SD_CLK" class="0">
-<segment>
-<wire x1="157.48" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
-<label x="160.02" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="(GPIO14/ADC2:6/TOUCH6/RTC16/SPICLK)MTMS"/>
-</segment>
-<segment>
-<wire x1="294.64" y1="248.92" x2="297.18" y2="248.92" width="0.1524" layer="91"/>
-<label x="297.18" y="248.92" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SPI_SCK/SDIO_CLK"/>
-</segment>
-</net>
-<net name="13-SPI_!CS!/SD_DATA3" class="0">
-<segment>
-<wire x1="157.48" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
-<label x="160.02" y="99.06" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="(GPIO13/ADC2:4/TOUCH4/RTC14/SPID/U0CTS)MTCK"/>
-</segment>
-<segment>
-<wire x1="294.64" y1="236.22" x2="297.18" y2="236.22" width="0.1524" layer="91"/>
-<label x="297.18" y="236.22" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SPI_!CS!/SDIO_DATA3"/>
-</segment>
-</net>
 <net name="FLASH_SD_DATA3" class="0">
 <segment>
 <wire x1="157.48" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
@@ -20196,18 +20160,6 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="J1" gate="J1" pin="D1/CAM_TRIG"/>
 </segment>
 </net>
-<net name="23-D0" class="0">
-<segment>
-<wire x1="157.48" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
-<label x="160.02" y="134.62" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="GPIO23"/>
-</segment>
-<segment>
-<wire x1="294.64" y1="208.28" x2="297.18" y2="208.28" width="0.1524" layer="91"/>
-<label x="297.18" y="208.28" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="J1" gate="J1" pin="D0"/>
-</segment>
-</net>
 <net name="22-SCL" class="0">
 <segment>
 <wire x1="157.48" y1="137.16" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
@@ -20232,53 +20184,16 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="J1" gate="J1" pin="I2C_SDA"/>
 </segment>
 </net>
-<net name="19-PWM1" class="0">
-<segment>
-<wire x1="157.48" y1="144.78" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
-<label x="160.02" y="144.78" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="(VSPIQ/HS2_DATA2)GPIO19"/>
-</segment>
-<segment>
-<pinref part="J1" gate="J1" pin="PWM1"/>
-<wire x1="294.64" y1="210.82" x2="297.18" y2="210.82" width="0.1524" layer="91"/>
-<label x="297.18" y="210.82" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="18-PWM0" class="0">
-<segment>
-<wire x1="157.48" y1="147.32" x2="160.02" y2="147.32" width="0.1524" layer="91"/>
-<label x="160.02" y="147.32" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="(VSPICLK/HS1_DATA7)GPIO18"/>
-</segment>
-<segment>
-<pinref part="J1" gate="J1" pin="PWM0"/>
-<wire x1="294.64" y1="213.36" x2="297.18" y2="213.36" width="0.1524" layer="91"/>
-<label x="297.18" y="213.36" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="5-STAT_LED" class="0">
+<net name="5-!CS" class="0">
 <segment>
 <wire x1="157.48" y1="154.94" x2="160.02" y2="154.94" width="0.1524" layer="91"/>
 <label x="160.02" y="154.94" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="(VSPICS0/HS1_DATA6)GPIO5"/>
 </segment>
 <segment>
-<pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="383.54" y1="78.74" x2="383.54" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="383.54" y1="81.28" x2="381" y2="81.28" width="0.1524" layer="91"/>
-<label x="381" y="81.28" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="2-SPI_CIPO/SD_DATA0" class="0">
-<segment>
-<wire x1="157.48" y1="160.02" x2="160.02" y2="160.02" width="0.1524" layer="91"/>
-<label x="160.02" y="160.02" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="(ADC2:2/TOUCH2/RTC12/SPIWP)GPIO2"/>
-</segment>
-<segment>
-<wire x1="294.64" y1="243.84" x2="297.18" y2="243.84" width="0.1524" layer="91"/>
-<label x="297.18" y="243.84" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SPI_SDI/SDIO_DATA0"/>
+<pinref part="J1" gate="J1" pin="SPI_!CS!"/>
+<wire x1="297.18" y1="223.52" x2="294.64" y2="223.52" width="0.1524" layer="91"/>
+<label x="297.18" y="223.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="U0RXD" class="0">
@@ -20475,23 +20390,6 @@ RF Trace Width: 13mil/0.3302mm</text>
 <junction x="25.4" y="149.86"/>
 </segment>
 </net>
-<net name="12-SD_DATA2/G4" class="0">
-<segment>
-<wire x1="294.64" y1="238.76" x2="297.18" y2="238.76" width="0.1524" layer="91"/>
-<label x="297.18" y="238.76" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SDIO_DATA2"/>
-</segment>
-<segment>
-<wire x1="157.48" y1="101.6" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
-<label x="160.02" y="101.6" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="(GPIO12/ADC2:5/TOUCH5/RTC15/SPIQ)MTDI"/>
-</segment>
-<segment>
-<pinref part="J1" gate="J1" pin="G4/BUS4"/>
-<wire x1="294.64" y1="172.72" x2="297.18" y2="172.72" width="0.1524" layer="91"/>
-<label x="297.18" y="172.72" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
 <net name="0-!BOOT!" class="0">
 <segment>
 <label x="162.56" y="162.56" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20514,7 +20412,7 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="J1" gate="J1" pin="!BOOT!"/>
 </segment>
 </net>
-<net name="16-G3/RX1/AUD_IN" class="0">
+<net name="16-G4/RX1/AUD_IN" class="0">
 <segment>
 <wire x1="157.48" y1="152.4" x2="160.02" y2="152.4" width="0.1524" layer="91"/>
 <label x="160.02" y="152.4" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20531,12 +20429,12 @@ RF Trace Width: 13mil/0.3302mm</text>
 <label x="297.18" y="198.12" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="G3/BUS3"/>
-<wire x1="294.64" y1="175.26" x2="297.18" y2="175.26" width="0.1524" layer="91"/>
-<label x="297.18" y="175.26" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="J1" gate="J1" pin="G4/BUS4"/>
+<wire x1="294.64" y1="172.72" x2="297.18" y2="172.72" width="0.1524" layer="91"/>
+<label x="297.18" y="172.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="17-G2/TX1/AUD_OUT" class="0">
+<net name="17-G3/TX1/AUD_OUT" class="0">
 <segment>
 <wire x1="157.48" y1="149.86" x2="160.02" y2="149.86" width="0.1524" layer="91"/>
 <label x="160.02" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20553,12 +20451,12 @@ RF Trace Width: 13mil/0.3302mm</text>
 <label x="297.18" y="200.66" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="G2/BUS2"/>
-<wire x1="294.64" y1="177.8" x2="297.18" y2="177.8" width="0.1524" layer="91"/>
-<label x="297.18" y="177.8" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="J1" gate="J1" pin="G3/BUS3"/>
+<wire x1="294.64" y1="175.26" x2="297.18" y2="175.26" width="0.1524" layer="91"/>
+<label x="297.18" y="175.26" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="25-G0/AUD_LRCLK/SCL1" class="0">
+<net name="25-G1/AUD_LRCLK/SCL1" class="0">
 <segment>
 <wire x1="157.48" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
 <label x="160.02" y="132.08" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20575,12 +20473,12 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="J1" gate="J1" pin="I2C_SCL1"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="G0/BUS0"/>
-<wire x1="294.64" y1="182.88" x2="297.18" y2="182.88" width="0.1524" layer="91"/>
-<label x="297.18" y="182.88" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="J1" gate="J1" pin="G1/BUS1"/>
+<wire x1="294.64" y1="180.34" x2="297.18" y2="180.34" width="0.1524" layer="91"/>
+<label x="297.18" y="180.34" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="26-G1/AUD_BCLK/SDA1" class="0">
+<net name="26-G2/AUD_BCLK/SDA1" class="0">
 <segment>
 <wire x1="157.48" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
 <label x="160.02" y="129.54" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20597,26 +20495,118 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="J1" gate="J1" pin="I2C_SDA1"/>
 </segment>
 <segment>
-<pinref part="J1" gate="J1" pin="G1/BUS1"/>
-<wire x1="294.64" y1="180.34" x2="297.18" y2="180.34" width="0.1524" layer="91"/>
-<label x="297.18" y="180.34" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="J1" gate="J1" pin="G2/BUS2"/>
+<wire x1="294.64" y1="177.8" x2="297.18" y2="177.8" width="0.1524" layer="91"/>
+<label x="297.18" y="177.8" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="4-SD_DATA1/I2C_!INT" class="0">
+<net name="4-I2C_!INT" class="0">
 <segment>
 <pinref part="J1" gate="J1" pin="I2C_!INT!"/>
 <wire x1="248.92" y1="177.8" x2="246.38" y2="177.8" width="0.1524" layer="91"/>
 <label x="246.38" y="177.8" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="294.64" y1="241.3" x2="297.18" y2="241.3" width="0.1524" layer="91"/>
-<label x="297.18" y="241.3" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SDIO_DATA1"/>
-</segment>
-<segment>
 <wire x1="157.48" y1="157.48" x2="160.02" y2="157.48" width="0.1524" layer="91"/>
 <label x="160.02" y="157.48" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="(ADC2:0/TOUCH0/RTC10/SPIHD)GPIO4"/>
+</segment>
+</net>
+<net name="13-PWM0" class="0">
+<segment>
+<wire x1="157.48" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
+<label x="160.02" y="99.06" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="(GPIO13/ADC2:4/TOUCH4/RTC14/SPID/U0CTS)MTCK"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="PWM0"/>
+<wire x1="294.64" y1="213.36" x2="297.18" y2="213.36" width="0.1524" layer="91"/>
+<label x="297.18" y="213.36" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="12-PWM1" class="0">
+<segment>
+<wire x1="157.48" y1="101.6" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
+<label x="160.02" y="101.6" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="(GPIO12/ADC2:5/TOUCH5/RTC15/SPIQ)MTDI"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="PWM1"/>
+<wire x1="294.64" y1="210.82" x2="297.18" y2="210.82" width="0.1524" layer="91"/>
+<label x="297.18" y="210.82" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="14-D0" class="0">
+<segment>
+<wire x1="157.48" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
+<label x="160.02" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="(GPIO14/ADC2:6/TOUCH6/RTC16/SPICLK)MTMS"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="D0"/>
+<wire x1="294.64" y1="208.28" x2="297.18" y2="208.28" width="0.1524" layer="91"/>
+<label x="297.18" y="208.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="15-G0" class="0">
+<segment>
+<wire x1="157.48" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
+<label x="160.02" y="93.98" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="(GPIO15/ADC2:3/TOUCH3/RTC13/SPICSO/U0RTS)MTDO"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="G0/BUS0"/>
+<wire x1="294.64" y1="182.88" x2="297.18" y2="182.88" width="0.1524" layer="91"/>
+<label x="297.18" y="182.88" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="2-STAT_LED" class="0">
+<segment>
+<wire x1="157.48" y1="160.02" x2="160.02" y2="160.02" width="0.1524" layer="91"/>
+<label x="160.02" y="160.02" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="(ADC2:2/TOUCH2/RTC12/SPIWP)GPIO2"/>
+</segment>
+<segment>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="383.54" y1="78.74" x2="383.54" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="81.28" x2="381" y2="81.28" width="0.1524" layer="91"/>
+<label x="381" y="81.28" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="18-SCK" class="0">
+<segment>
+<wire x1="157.48" y1="147.32" x2="160.02" y2="147.32" width="0.1524" layer="91"/>
+<label x="160.02" y="147.32" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="(VSPICLK/HS1_DATA7)GPIO18"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="SPI_SCK"/>
+<wire x1="294.64" y1="231.14" x2="297.18" y2="231.14" width="0.1524" layer="91"/>
+<label x="297.18" y="231.14" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="19-CIPO" class="0">
+<segment>
+<wire x1="157.48" y1="144.78" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
+<label x="160.02" y="144.78" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="(VSPIQ/HS2_DATA2)GPIO19"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="SPI_SDI"/>
+<wire x1="294.64" y1="226.06" x2="297.18" y2="226.06" width="0.1524" layer="91"/>
+<label x="297.18" y="226.06" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="23-COPI" class="0">
+<segment>
+<wire x1="157.48" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
+<label x="160.02" y="134.62" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="GPIO23"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="SPI_SDO"/>
+<wire x1="294.64" y1="228.6" x2="297.18" y2="228.6" width="0.1524" layer="91"/>
+<label x="297.18" y="228.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
