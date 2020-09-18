@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -160,7 +160,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
-<schematic xreflabel="%F%N/%S" xrefpart="1_/%S.%C%R">
+<schematic xreflabel="%F%N/%S" xrefpart="/%S.%C%R">
 <libraries>
 <library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
@@ -19296,7 +19296,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U2" library="SparkFun-RF" deviceset="ESP32" device=""/>
 <part name="C27" library="SparkFun-Capacitors" deviceset="3.0NF" device="-0402T-50V-5%" value="3.0nF"/>
 <part name="GND40" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U4" library="SparkFun-IC-Comms" deviceset="CP2102N" device=""/>
+<part name="U4" library="SparkFun-IC-Comms" deviceset="CP2102N" device="" value="CP210X"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
@@ -19381,7 +19381,7 @@ GPIO0 determines boot mode</text>
 <text x="106.68" y="180.34" size="2.032" layer="97" font="vector" align="bottom-center">ESP32 VCC Range: 2.8-3.6V</text>
 <text x="381" y="114.3" size="1.778" layer="97" font="vector" align="top-center">If DTR is LOW, toggling RTS from HIGH to LOW resets to run mode.
 If RTS is HIGH, toggling DTR from LOW to HIGH resets to bootloader.</text>
-<text x="332.74" y="274.32" size="2.54" layer="94" font="vector">CP2102N (USB-to-Serial Converter)</text>
+<text x="332.74" y="274.32" size="2.54" layer="94" font="vector">CP2104/2N (USB-to-Serial Converter)</text>
 <text x="200.66" y="274.32" size="2.54" layer="94" font="vector">MicroMod Connector</text>
 <wire x1="198.12" y1="279.4" x2="198.12" y2="193.04" width="0.2032" layer="97" style="longdash"/>
 <text x="91.44" y="73.66" size="1.27" layer="97" font="vector" ratio="16">Antenna Trace Calulation:</text>
@@ -19392,6 +19392,16 @@ Er: 4.58
 Polygon Isolation: 6mil/0.1524mm
 RF Trace Width: 13mil/0.3302mm</text>
 <text x="91.44" y="58.42" size="0.8128" layer="97" font="vector">https://chemandy.com/calculators/coplanar-waveguide-with-ground-calculator.htm</text>
+<text x="175.26" y="157.48" size="1.27" layer="97" font="vector">GPIO2 must be able
+to be driven low to 
+enter bootloader</text>
+<text x="172.72" y="99.06" size="1.27" layer="97" font="vector">Pulling GPIO12 high
+may prevent flashing
+and/or booting</text>
+<text x="172.72" y="86.36" size="1.27" layer="97" font="vector">Pulling GPIO15 high
+will silence boot
+messages printed
+by the bootloader</text>
 </plain>
 <instances>
 <instance part="SUPPLY1" gate="G$1" x="50.8" y="175.26" smashed="yes">
@@ -20054,7 +20064,7 @@ RF Trace Width: 13mil/0.3302mm</text>
 <junction x="35.56" y="91.44"/>
 </segment>
 </net>
-<net name="FLASH_SD_DATA3" class="0">
+<net name="FLASH_SWP" class="0">
 <segment>
 <wire x1="157.48" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
 <label x="160.02" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20066,7 +20076,7 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="U1" gate="U1" pin="D2/!WP!"/>
 </segment>
 </net>
-<net name="FLASH_SD_DATA2" class="0">
+<net name="FLASH_SHD" class="0">
 <segment>
 <wire x1="157.48" y1="111.76" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
 <label x="160.02" y="111.76" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20078,7 +20088,7 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="U1" gate="U1" pin="D3/!HOLD!"/>
 </segment>
 </net>
-<net name="FLASH_SD_DATA1" class="0">
+<net name="FLASH_SDI" class="0">
 <segment>
 <wire x1="157.48" y1="114.3" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
 <label x="160.02" y="114.3" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20090,7 +20100,7 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="U1" gate="U1" pin="D0/DI"/>
 </segment>
 </net>
-<net name="FLASH_SD_DATA0" class="0">
+<net name="FLASH_SDO" class="0">
 <segment>
 <wire x1="157.48" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
 <label x="160.02" y="116.84" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20102,7 +20112,7 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="U1" gate="U1" pin="D1/DO"/>
 </segment>
 </net>
-<net name="FLASH_SD_CLK" class="0">
+<net name="FLASH_SCK" class="0">
 <segment>
 <wire x1="157.48" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
 <label x="160.02" y="119.38" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -20114,7 +20124,7 @@ RF Trace Width: 13mil/0.3302mm</text>
 <pinref part="U1" gate="U1" pin="CLK"/>
 </segment>
 </net>
-<net name="FLASH_SD_CMD" class="0">
+<net name="FLASH_SCS" class="0">
 <segment>
 <wire x1="157.48" y1="106.68" x2="160.02" y2="106.68" width="0.1524" layer="91"/>
 <label x="160.02" y="106.68" size="1.27" layer="95" font="vector" xref="yes"/>
