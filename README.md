@@ -1,7 +1,7 @@
 SparkFun MicroMod ESP32 Processor Board
 ========================================
 
-[SparkFun MicroMod ESP32 Processor Board](URL for picture of part)
+[SparkFun MicroMod ESP32 Processor Board](https://cdn.sparkfun.com/assets/parts/1/5/6/8/0/16781-SparkFun_MicroMod_ESP32_Processor-01.jpg)
 
 [*SparkFun MicroMod ESP32 Processor Board (16781)*](https://www.sparkfun.com/products/16781)
 
@@ -20,10 +20,7 @@ Repository Contents
 
 Documentation
 --------------
-* **[Library](GitHub library URL)** - <LANGUAGE> library for the SparkFun MicroMod ESP32 Processor Board.
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/micromod-esp32-processor-board-hookup-guide)** - Basic hookup guide for the SparkFun MicroMod ESP32 Processor Board.
-* **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts)** - Fritzing diagrams for SparkFun products.
-* **[SparkFun 3D Model repo](https://github.com/sparkfun/3D_Models)** - 3D models of SparkFun products. 
 * **[SparkFun Graphical Datasheets](https://github.com/sparkfun/Graphical_Datasheets)** -Graphical Datasheets for various SparkFun products.
 
 License Information
