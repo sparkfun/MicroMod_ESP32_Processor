@@ -21,7 +21,6 @@ Repository Contents
 Documentation
 --------------
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/micromod-esp32-processor-board-hookup-guide)** - Basic hookup guide for the SparkFun MicroMod ESP32 Processor Board.
-* **[Test Sketches](https://github.com/sparkfun/MicroMod_Test_Sketches)** - Arduino test sketches for the MicroMod ecosystem.
 * **[Getting Started with MicroMod](https://learn.sparkfun.com/tutorials/getting-started-with-micromod)** - A tutorial to help you get started with the MicroMod Ecosystem. 
 * **[Designing with MicroMod](https://learn.sparkfun.com/tutorials/designing-with-micromod)** - Detailed tutorial on designing with the MicroMod standard. 
 * **[SparkFun Graphical Datasheets](https://github.com/sparkfun/Graphical_Datasheets)** -Graphical Datasheets for various SparkFun products.
