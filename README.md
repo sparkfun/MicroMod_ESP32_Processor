@@ -22,6 +22,7 @@ Documentation
 --------------
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/micromod-esp32-processor-board-hookup-guide)** - Basic hookup guide for the SparkFun MicroMod ESP32 Processor Board.
 * **[Getting Started with MicroMod](https://learn.sparkfun.com/tutorials/getting-started-with-micromod)** - A tutorial to help you get started with the MicroMod Ecosystem. 
+* **[Designing with MicroMod](https://learn.sparkfun.com/tutorials/designing-with-micromod)** - A tutorial to walk you through the specs of the MicroMod processor and carrier board as well as the basics of incorporating the MicroMod form factor into your own PCB designs.
 
 License Information
 -------------------
