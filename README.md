@@ -7,7 +7,7 @@ SparkFun MicroMod ESP32 Processor Board
 
 The MicroMod ESP32 Processor Board combines Espressif's ESP32 with our M.2 connector interface to bring a power-packed processor board into our MicroMod ecosystem. 
 
-The ESP32 includes a laundry list of functionality, including the dual-core Tensilica LX6 microprocessor, 240MHz clock frequency, 520kB internal SRAM, integrated WiFi transceiver, integrated dual-mode Bluetooth, and hardware accelerated encryption (AES, SHA2, ECC, RSA-4096). With this MicroMod processor board, you have access to 8 general use IO pins, dedicated analog, digital, and PWM pins, as well as all the fan favorites - SPI, I<sup>2</sup>C, UART, and SDIO. Add to that 16MB flash storage and sleep current of around 500&micro;A, and you've got a perfect storm of versatility. 
+The ESP32 includes a laundry list of functionality, including the dual-core Tensilica LX6 microprocessor, 240MHz clock frequency, 520kB internal SRAM, integrated WiFi transceiver, and hardware accelerated encryption (AES, SHA2, ECC, RSA-4096). With this MicroMod processor board, you have access to 8 general use IO pins, dedicated analog, digital, and PWM pins, as well as all the fan favorites - SPI, I<sup>2</sup>C, UART, and SDIO. Add to that 16MB flash storage and sleep current of around 500&micro;A, and you've got a perfect storm of versatility. 
 
 Grab yourself a SparkFun MicroMod ESP32 Processor Board and a compatible carrier board and get to hacking! 
 
