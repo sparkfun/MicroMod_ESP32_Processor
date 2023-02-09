@@ -1,7 +1,7 @@
 SparkFun MicroMod ESP32 Processor Board
 ========================================
 
-![SparkFun MicroMod ESP32 Processor Board](https://cdn.sparkfun.com/assets/parts/1/5/6/8/0/16781-SparkFun_MicroMod_ESP32_Processor-01.jpg)
+[![SparkFun MicroMod ESP32 Processor Board](https://cdn.sparkfun.com/assets/parts/1/5/6/8/0/16781-SparkFun_MicroMod_ESP32_Processor-01.jpg)](https://www.sparkfun.com/products/16781)
 
 [*SparkFun MicroMod ESP32 Processor Board (16781)*](https://www.sparkfun.com/products/16781)
 
